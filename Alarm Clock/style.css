@@ -1,0 +1,80 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(114, 67, 67, 0.5)),
+    url("background.jpg") no-repeat center center/cover;
+  color: #fff;
+  position: relative;
+}
+
+.container {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(14, 13, 13, 0.5);
+  position: relative;
+  z-index: 1;
+}
+
+.clock {
+  font-size: 48px;
+  margin-bottom: 20px;
+  .container {
+    background-color: rgba(
+      255,
+      255,
+      255,
+      0.8
+    ); /* Off-white background color with some transparency */
+  }
+}
+
+.alarm-setting {
+  margin-bottom: 20px;
+}
+
+#alarm-message {
+  color: #ff6347;
+  font-size: 20px;
+}
+
+#initialize-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #ff6347;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+}
+
+button {
+  background-color: #ff6347;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 16px;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+#alarm-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px; /* Adjust the size as needed */
+  opacity: 0.5; /* Adjust the opacity for better readability */
+  z-index: 0;
+}
